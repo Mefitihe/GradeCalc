@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">GradeCalc</string>
+    <string name="maths">Maths</string>
+    <string name="civics">Civics</string>
+    <string name="english">English</string>
+    <string name="biology">Biology</string>
+    <string name="geography">Geography</string>
+    <string name="history">History</string>
+    <string name="chemistry">Chemistry</string>
+    <string name="physics">Physics</string>
+    <string name="amharic">Amharic</string>
+    <string name="other_language_optional">Local Language </string>
+    <string name="calculate">Calculate</string>
+    <string name="title_home">Home</string>
+    <string name="grade">Grade</string>
+    <string name="subjects">Subjects</string>
+    <string name="title_telegram">Telegram</string>
+
+
+</resources>

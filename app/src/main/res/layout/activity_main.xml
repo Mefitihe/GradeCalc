@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_gravity="center_horizontal"
+    android:weightSum="1"
+    android:scrollbars="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/textStyle"
+            android:text="@string/subjects"/>
+        <TextView
+            android:layout_alignParentRight="true"
+            style="@style/textStyle"
+            android:text="@string/grade"
+            android:layout_marginRight="90dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="90dp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"
+        android:padding="10dp"/>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/maths"
+            style="@style/textStyle"/>
+
+        <Spinner
+            android:id="@+id/grd_math"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/grade_letter"
+            android:theme="@style/AppTheme.Spinner">
+
+        </Spinner>
+
+        <TextView
+
+            android:text="@string/civics"
+            style="@style/textStyle"/>
+
+        <Spinner
+            android:id="@+id/grd_civic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/grade_letter"
+            android:theme="@style/AppTheme.Spinner">
+
+        </Spinner>
+    
+        <TextView
+            style="@style/textStyle"
+            android:text="@string/english"/>
+        <Spinner
+            android:id="@+id/grd_eng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/grade_letter"
+            android:theme="@style/AppTheme.Spinner">
+
+        </Spinner>
+    
+        <TextView
+            style="@style/textStyle"
+            android:text="@string/biology"/>
+        <Spinner
+            android:id="@+id/grd_bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/grade_letter"
+            android:theme="@style/AppTheme.Spinner">
+
+        </Spinner>
+    
+    <TextView
+        style="@style/textStyle"
+        android:text="@string/geography"/>
+    <Spinner
+        android:id="@+id/grd_geo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/grade_letter"
+        android:theme="@style/AppTheme.Spinner">
+
+    </Spinner>
+
+    <TextView
+        style="@style/textStyle"
+        android:text="@string/history" />
+    <Spinner
+        android:id="@+id/grd_his"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/grade_letter"
+        android:theme="@style/AppTheme.Spinner">
+
+    </Spinner>
+
+        <TextView
+            style="@style/textStyle"
+            android:text="@string/chemistry" />
+        <Spinner
+            android:id="@+id/grd_chem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/grade_letter"
+            android:theme="@style/AppTheme.Spinner">
+
+        </Spinner>
+ 
+        <TextView
+            style="@style/textStyle"
+            android:text="@string/physics" />
+        <Spinner
+            android:id="@+id/grd_phy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/grade_letter"
+            android:theme="@style/AppTheme.Spinner">
+
+        </Spinner>
+
+   
+        <TextView
+            style="@style/textStyle"
+            android:text="@string/amharic"/>
+        <Spinner
+            android:id="@+id/grd_am"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/grade_letter"
+           android:theme="@style/AppTheme.Spinner">
+
+        </Spinner>
+    
+        <TextView
+            style="@style/textStyle"
+            android:text="@string/other_language_optional"/>
+
+
+        <Spinner
+            android:id="@+id/other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/grade_letter"
+            android:theme="@style/AppTheme.Spinner">
+
+        </Spinner>
+        <TextView
+            android:id="@+id/view_cgpa"
+            style="@style/textStyle"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/btn_calc"
+            style="@style/textStyle"
+            android:layout_gravity="end"
+
+            android:text="@string/calculate"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite" />
+    </GridLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"/>
+
+</LinearLayout>
